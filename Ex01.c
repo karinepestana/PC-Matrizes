@@ -1,21 +1,22 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 1000
 
 int main()
 {
 	int n, i, pos;
+	float vetor[TAM], menor;
 
 	printf("Entre com o tamanho do vetor: \n");
 	scanf("%d", &n);
-
-	float vetor[n];	
+		
 	for (i = 0; i < n; i++) {
 		printf("Entre com o %d° número: \n", i+1);
 		scanf("%f", &vetor[i]);
 	}
 
-	float menor = vetor[0];
+	menor = vetor[0];
 	pos = 0;
 	for (i = 1; i < n; i++){
 		if (vetor[i] < menor){

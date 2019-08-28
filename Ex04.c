@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 1000
 
 int main()
 {
 	int n, i, k =0, j, aux = 1001;
+	int vetor[TAM][2];
 
 	printf("Entre com o tamanho do vetor: \n");
-	scanf("%d", &n);
-
-	int vetor[n][2];	
+	scanf("%d", &n);	
 
 	for (i = 0; i < n; i++)
 	{

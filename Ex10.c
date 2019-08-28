@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 50
 
 
 int main(){
 	int n,i,j;
-	char v[50][50];
-	
+	char v[TAM][TAM];	
 	
 	printf ("Informe um número ímpar entre 3 e 50: ");
 	scanf ("%d", &n);	
 	
-	if ((n>3 && n<50) && (n%2==1)){
+	if ((n>3 && n<TAM) && (n%2==1)){
 		// Preenche a matriz com pontos (.)
 		for (i=0; i<n;i++){
 			for (j=0; j<n;j++){

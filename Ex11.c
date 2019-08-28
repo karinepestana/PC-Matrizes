@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define TAM 100
 
 int main(){
 	int n, i,j;
+	int v[TAM][TAM], m[TAM][TAM];
 	
 	printf ("Informe o número de linhas/colunas de ordem Par da matriz: ");
 	scanf ("%d", &n);
-	
-	int v[n][n], m[n][n];
-	
 	
 	if (n%2==0){
 		//Pega os valores da matriz, indicado pelo usuário 

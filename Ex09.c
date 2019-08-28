@@ -1,14 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 100
 
 
 int main(){
-	int n,i,j;	
+	int n,i,j;
+	char v[TAM][50];
 	
 	printf ("Informe um número: ");
-	scanf ("%d", &n);
-	char v[n][50];
+	scanf ("%d", &n);	
 
 	for (i = 0; i < 50; ++i)
 		v[0][i] = 0;

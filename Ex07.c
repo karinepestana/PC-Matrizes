@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 100
 
 int main()
 {
 	int n, i, j, aux = 0;
+	float m[TAM][TAM], media_diagonal = 0;
 
 	printf("n: \n");
-	scanf("%d", &n);
-
-	float m[n][n], media_diagonal = 0;
+	scanf("%d", &n);	
 
 	printf("Entre com a matriz: \n");
 	for (i = 0; i < n; i++) {
@@ -22,8 +22,6 @@ int main()
 	{
 		aux = n - 1 - i;
 		media_diagonal += m[i][aux];
-		//printf("%f\n", m[i][aux]);
-		//printf("%d %d\n", i, aux);
 	}
 
 	media_diagonal = media_diagonal/n;

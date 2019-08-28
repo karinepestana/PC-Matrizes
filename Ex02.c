@@ -1,18 +1,19 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 100
 
 int main()
 {
 	int l, c, i, j, cont = 0;
+	float matriz[TAM][TAM];
+	float media[TAM];
 
 	printf("L: \n");
 	scanf("%d", &l);
 	printf("C: \n");
 	scanf("%d", &c);
-
-	float matriz[l][c];
-	float media[l];
+	
 
 	for (i = 0; i < l; i++)
 		media[i] = 0;	

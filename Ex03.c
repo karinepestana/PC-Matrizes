@@ -1,18 +1,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#define TAM 1000
 
 int main()
 {
 	int n, i, j, cont = 0;
 
 	float v1_media = 0, v2_media = 0, mt_media = 0;
+	float matriz[TAM][3];
+	float media[TAM];
 
 	printf("Número de alunos: \n");
-	scanf("%d", &n);
-
-	float matriz[n][3];
-	float media[n];
+	scanf("%d", &n);	
 
 	for (i = 0; i < n; i++)
 		media[i] = 0;
